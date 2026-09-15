@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /home/sanzor/rk mv api/src/instructions/instructions_app_data.rs api/src/instructions/app_instructions_data.rs)",
+      "Bash(cargo build *)",
+      "Bash(kill 103670)",
+      "Bash(cargo new *)",
+      "Bash(cargo add *)",
+      "Bash(cargo run *)",
+      "Bash(cargo clippy *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(printf 'type, client, tx, amount\\\\ndeposit,   1,   1,   1.2345\\\\ndispute, 1, 1,\\\\nresolve,   1,   1  ,\\\\n')",
+      "Bash(rm /tmp/ws_test.csv)",
+      "Bash(timeout 3 cargo run -p api)",
+      "Bash(mkdir -p /home/sanzor/rk/src/domain/ids)",
+      "Bash(mkdir -p /home/sanzor/rk/src/domain/instructions)",
+      "Bash(mkdir -p /home/sanzor/rk/src/engine_core/account)",
+      "Bash(mkdir -p /home/sanzor/rk/src/engine_core/client)",
+      "Bash(mkdir -p /home/sanzor/rk/src/engine_core/engine)",
+      "Bash(cp domain/src/ids/mod.rs src/domain/ids/mod.rs)",
+      "Bash(cp domain/src/ids/client_id.rs src/domain/ids/client_id.rs)",
+      "Bash(cp domain/src/ids/transaction_id.rs src/domain/ids/transaction_id.rs)",
+      "Bash(cp domain/src/instructions/mod.rs src/domain/instructions/mod.rs)",
+      "Bash(python3 -)",
+      "Bash(cargo clean *)",
+      "Bash(cargo fmt *)"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+[package]
+name = "cli"
+version = "0.1.0"
+edition = "2024"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[dependencies]
+async-trait = "0.1.92"
+csv = "1.4.0"
+rust_decimal = { version = "1.43.0", features = ["serde-with-str"] }
+serde = { version = "1.0.229", features = ["derive"] }
+tokio = { version = "1.53.1", features = ["sync", "macros", "rt-multi-thread", "time", "fs", "io-util"] }
+tokio-util = { version = "0.7.17", features = ["io", "io-util"] }
+
+[dev-dependencies]
+proptest = "1.11.0"
+rust_decimal_macros = "1.40.0"
